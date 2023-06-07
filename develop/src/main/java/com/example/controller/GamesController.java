@@ -10,7 +10,16 @@ public class GamesController {
 
 	@RequestMapping("/")
 	public String main(Model model) {
-		return "MemoryGame";		
+		return "index";
+	}
+	
+	@RequestMapping("memoryGame")
+	public String memoryGame(Model model) {
+		return "memoryGame";
 	}
 
+	@RequestMapping("slotMachine")
+	public String slotMachine(Model model) {
+		return "slotMachine";
+	}
 }
